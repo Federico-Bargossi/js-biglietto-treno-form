@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: rgb(185 21 71);
+}
+
+.h1{
+    color: white;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
+    border-radius: 20px;
+    background-color: white;
+    padding-top: 15px;
+}
+
+
+.bottoni{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}

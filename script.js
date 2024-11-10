@@ -3,6 +3,10 @@ const userNameInput = document.getElementById("Nome-cognome");
 const kmPercorrereInput = document.getElementById("km");
 const etaInput = document.getElementById("età");
 
+const nomeCognomeElem = document.getElementById("nomeCognome-card");
+const offertaElem = document.getElementById("offerta-card");
+const prezzoElem = document.getElementById("prezzoBiglietto-card");
+
 
 formElem.addEventListener("submit", function (event) {
     console.log(event);
@@ -30,6 +34,10 @@ formElem.addEventListener("submit", function (event) {
     }
 
     prezzoTotale = prezzoTotale.toFixed(2);
+
+    nomeCognomeElem.innerHTML = userName;
+    offertaElem.innerHTML = offerta;
+    prezzoElem.innerHTML = prezzoTotale;
 
     console.log(`il prezzo totale risulta ${prezzoTotale}`);
     console.log(offerta);

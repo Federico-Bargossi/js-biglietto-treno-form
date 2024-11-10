@@ -15,4 +15,23 @@ formElem.addEventListener("submit", function (event) {
 
     console.log(userName, kmPercorrere, eta);
 
+    const prezzoKm = 0.21;
+
+    let prezzoTotale = kmPercorrere * prezzoKm;
+    let offerta = 'Biglietto standard'
+
+    if (eta.includes('Minorenne')) {
+        //sconto 20%
+        prezzoTotale *= 0.80;
+        offerta = 'Biglietto ridotto minorenni'
+    } else if (eta.includes('Over 65')) {
+        prezzoTotale *= 0.60;
+        offerta = 'Biglietto ridotto over 65'
+    }
+
+    prezzoTotale = prezzoTotale.toFixed(2);
+
+    console.log(`il prezzo totale risulta ${prezzoTotale}`);
+    console.log(offerta);
+
 })
